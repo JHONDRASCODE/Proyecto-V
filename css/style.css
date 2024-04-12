@@ -1,6 +1,8 @@
 /* Estilos para el cuerpo del documento */
 * {
+    box-sizing: border-box; /* Incluir bordes y rellenos en el ancho y alto */
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +13,7 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 55px 0;
 }
 
 header h1 {
@@ -25,22 +27,33 @@ header h2 {
 }
 
 nav {
-    background-color: #f2f2f2;
-    padding: 10px 0;
+    background-color: rgb(97, 153, 59);
+    padding: 20px 10px;
+    text-align: center;
 }
 
 nav a {
     margin: 0 10px;
     text-decoration: none;
+    font-size: 27px;
     color: #333;
+    display: inline-block;
+    border-right: 3px solid #ccc; /* Agrega una línea sólida a la derecha de cada enlace */
+    padding-right: 10px; /* Añade espacio entre las palabras y las líneas */
+    margin-right: 10px; /* Añade espacio entre los enlaces */
+}
+
+nav a:last-child {
+    border-right: none;
 }
 
 nav a:hover {
     color: #000;
+    text-align: center;
 }
 
 main {
-    padding: 20px; /* Agregar relleno al contenido principal */
+    padding: 20px; 
     overflow: hidden;
 }
 
@@ -50,7 +63,10 @@ section {
 
 .informacion-principal {
     background-color: #f7f7f7;
-    padding: 20px;
+    padding: 80px;
+    width: 600px; /* Ajusta el ancho según sea necesario */
+    margin-right: 10px; /* Espacio entre el formulario y la .informacion-principal */
+    border-radius: 10px;
 }
 
 .informacion-principal h2 {
@@ -69,11 +85,21 @@ section {
     text-decoration: none;
 }
 
+.informacion-secundaria {
+    background-color: #f7f7f7;
+    padding: 80px;
+    width: 600px; /* Ancho deseado */
+    clear: left; /* Alinea a la izquierda */
+    margin-right: 10px; /* Espacio entre la .informacion-principal y la .informacion-secundaria */
+}
+
+
 .formulario-cita {
     border: 1px solid #ccc; /* Agregar un borde al formulario */
     padding: 20px; /* Agregar relleno al formulario */
     float: right; /* Alinear el formulario a la derecha */
     width: 40%; 
+    border-radius: 20px;
 }
 
 .formulario-cita h3 {
@@ -98,6 +124,10 @@ section {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    text-align: center; /* Centra el botón */
+    display: block; /* Para que el botón ocupe todo el ancho */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    
 }
 
 footer {
@@ -109,4 +139,10 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.container {
+    max-width: 1200px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 0 20px; /* Agrega relleno a los lados del contenedor */
 }
