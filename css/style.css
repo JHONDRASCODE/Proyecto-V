@@ -70,10 +70,11 @@ section {
 
 .informacion-principal {
     background-color: beige;
-    padding: 80px;
-    width: 30%;
+    padding: 30px;
+    width: 50%;
+    margin-bottom: 20px;
     float: left;
-    margin-right: 10px; 
+    margin-right: 10px;  
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -81,10 +82,13 @@ section {
 .informacion-principal h2 {
     font-size: 20px;
     margin: 0;
+    padding-top: 10px;
 }
 
 .informacion-principal p {
     margin: 10px 0;
+    padding-top: 30px;
+    width: 50%;
 }
 
 .informacion-principal a {
@@ -93,23 +97,53 @@ section {
     padding: 10px 20px;
     text-decoration: none;
 }
+.informacion-principal img {
+    width: 200px;
+    height:200px;
+    border-radius: 20%;
+    border: solid 2px;
+    float:  right;
+     
+
+}
 
 .informacion-secundaria {
     background-color: beige;
-    padding: 80px;
-    width: 30%; 
+    padding: 30px;
+    width: 50%; 
     float: left;
+    margin-bottom: 20px;
     margin-right: 10px; 
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
+.informacion-secundaria img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: solid 2px;
+    float: right;
+}
+
+.informacion-secundaria h2 {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.informacion-secundaria p {
+    margin: 10px 0;
+    padding-top: 30px;
+    width: 50%;
+}
 
 .formulario-cita {
     border: 1px solid #ccc; 
     padding: 50px; 
     float: right; 
     width: 30%; 
+    height: 513px;
     border-radius: 20px;
     
     background-color: green;
@@ -146,7 +180,7 @@ section {
     cursor: pointer;
     text-align: center; 
     display: block; 
-    margin-left: 40px;
+    margin-left: 120px;
     margin-top: 25px;
     justify-content: center;
     
